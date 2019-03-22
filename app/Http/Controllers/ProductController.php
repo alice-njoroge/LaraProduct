@@ -43,7 +43,7 @@ class ProductController extends Controller
           
           Product::create($product);
   
-          return back()->with('success', 'Product has been added');;
+          return redirect('products')->with('success', 'Product has been added');;
     }
 
     /**

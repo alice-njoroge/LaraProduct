@@ -13,6 +13,7 @@
         <p>{{ \Session::get('success') }}</p>
       </div><br />
      @endif
+     <a href="{{action('ProductController@create')}}" class="btn btn-success pull-right">Create</a>
     <table class="table table-striped">
     <thead>
       <tr>
@@ -38,6 +39,11 @@
         </td>
       </tr>
       @endforeach
+      @if(empty($products))
+      <tr>
+        <td colspan="4" class="text-center">Sorry, You are out of stock</td>
+    </tr>
+    @endif
     </tbody>
   </table>
   </div>
