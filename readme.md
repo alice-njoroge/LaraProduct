@@ -9,4 +9,5 @@ The projects is a simple crud apps dealing with stock product management
 4. copy the environment variables if does not exists, `cp .env.example .env`
 5. Create a mysql database and update `.env` accordingly
 6. Migrate the database `php artisan migrate`  
+8. Generate application key `php artisan key:generate`
 7. Run the project  `php artisan serve`
